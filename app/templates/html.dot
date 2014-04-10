@@ -13,8 +13,7 @@ html
   </head>
   <body>
     {{=it.header}}
-    {{=it.landingPromos}}
-    {{=it.threeColumnPromo}}
+    {{=it.container}}
     {{=it.footer}}
   </body>
 </html>

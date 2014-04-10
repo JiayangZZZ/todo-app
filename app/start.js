@@ -5,7 +5,7 @@ var express = require('express')
 var app = express();
 
 app.configure(function() {
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 3200);
   app.use(express.logger('dev'));
   app.use(express.static(__dirname));
 });
@@ -15,8 +15,16 @@ requirejs.config({
   nodeRequire : require
 });
 
+var tmpl = requirejs('./public/templates/tmpl');
+
+var listItems = require('./models/listItems');
+
 app.get('/', function(req, res) {
-  res.send();
+  res.send(tmpl.html({
+    header : tmpl.header(),
+    container : tmpl.container(),
+    footer : tmpl.footer()
+  }));
 });
 
 

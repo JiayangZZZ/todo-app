@@ -12,7 +12,8 @@
     "grunt": "~0.4.4",
     "grunt-contrib-compass": "~0.7.2",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-dot-compiler": "~0.5.12"
+    "grunt-dot-compiler": "~0.5.12",
+    "dot": "~1.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
