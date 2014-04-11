@@ -17,12 +17,14 @@ requirejs.config({
 
 var tmpl = requirejs('./public/templates/tmpl');
 
-var listItems = require('./models/listItems');
+var listItems = require('./models/listItems')
+  , todos = require('./models/todos');
 
 app.get('/', function(req, res) {
   res.send(tmpl.html({
     header : tmpl.header(),
     container : tmpl.container(),
+    list : tmpl.list({ todos : todos}),
     footer : tmpl.footer()
   }));
 });

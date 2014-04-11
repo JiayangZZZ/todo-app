@@ -106,3 +106,10 @@ body {
   text-align: center;
   background: red;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000327}}
+.list {
+  margin: 0 auto;
+  overflow: hidden;
+  background: blue;
+}

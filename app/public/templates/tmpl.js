@@ -12,6 +12,9 @@ var out='<section class="footer"></section>';return out;
 var out='<header class="landing-header"><section class="title"><p>header title</p></section></header>';return out;
 };
   tmpl['html']=function anonymous(it) {
-var out='<!DOCTYPE html><html><head><title>TODO APP</title><link href="/public/styles/build/styles.css" rel="stylesheet" type="text/css"></head><body>'+(it.header)+(it.container)+(it.footer)+'</body></html>';return out;
+var out='<!DOCTYPE html><html><head><title>TODO APP</title><link href="/public/styles/build/styles.css" rel="stylesheet" type="text/css"></head><body>'+(it.header)+(it.container)+(it.list)+(it.footer)+'</body></html>';return out;
+};
+  tmpl['list']=function anonymous(it) {
+var out='<ul class="list">';var arr1=it.todos;if(arr1){var todo,index=-1,l1=arr1.length-1;while(index<l1){todo=arr1[index+=1];out+='<li class="list-item">'+(todo.title)+'</li>';} } out+='</ul>';return out;
 };
 return tmpl;});

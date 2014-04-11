@@ -14,6 +14,7 @@ html
   <body>
     {{=it.header}}
     {{=it.container}}
+    {{=it.list}}
     {{=it.footer}}
   </body>
 </html>
