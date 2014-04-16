@@ -4,6 +4,7 @@ var express = require('express')
 
 var app = express();
 
+
 app.configure(function() {
   app.set('port', process.env.PORT || 3200);
   app.use(express.logger('dev'));
@@ -18,13 +19,23 @@ requirejs.config({
 var tmpl = requirejs('./public/templates/tmpl');
 
 var listItems = require('./models/listItems')
-  , todos = require('./models/todos');
+  , todos = require('./models/todos')
+  , todo = require('./models/todo');
 
 app.get('/', function(req, res) {
   res.send(tmpl.html({
     header : tmpl.header(),
-    container : tmpl.container(),
-    list : tmpl.list({ todos : todos}),
+//    container : tmpl.container(),
+ //   list : tmpl.list({ todos : todos}),
+    body : tmpl.bodyIndex(),
+    footer : tmpl.footer()
+  }));
+});
+
+app.get('/todos/:id', function(req, res) {
+  res.send(tmpl.html({
+    header : tmpl.header(),
+    body : tmpl.bodyTodo({todo : todo}),
     footer : tmpl.footer()
   }));
 });
