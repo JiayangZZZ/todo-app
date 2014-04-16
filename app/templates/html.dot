@@ -13,8 +13,7 @@ html
   </head>
   <body>
     {{=it.header}}
-    {{=it.container}}
-    {{=it.list}}
+    {{=it.body}}
     {{=it.footer}}
   </body>
 </html>

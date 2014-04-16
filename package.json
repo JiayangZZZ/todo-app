@@ -6,14 +6,16 @@
   "dependencies": {
     "express": "~3.4.8",
     "grunt": "~0.4.4",
-    "requirejs": "~2.1.11"
+    "requirejs": "~2.1.11",
+    "superagent": "~0.17.0"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-compass": "~0.7.2",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-dot-compiler": "~0.5.12",
-    "dot": "~1.0.2"
+    "dot": "~1.0.2",
+    "util": "~0.10.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -5,8 +5,9 @@ list
 
 !-->
 
-<ul class="list">
+/*<ul class="list">
   {{~it.todos : todo : index}}
   <li class="list-item">{{=todo.title}}</li>
   {{~}}
 </ul>
+*/
