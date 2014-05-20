@@ -4,6 +4,14 @@ body index
 
 !-->
 
-<section>
-  <p>I love this</p>
-</section>
+<div class="body-index">
+  <div class="container">
+    <ul class="list">
+      <li class="list-item">Coffee</li>
+      <li class="list-item">Milk</li>
+      <li class="list-item">Milddk</li>
+      <li class="list-item">Milkss</li>
+      <li class="list-item">Masdfilk</li>
+    </ul>
+  </div>
+</div>

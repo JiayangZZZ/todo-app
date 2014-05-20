@@ -18,17 +18,28 @@
 }
 
 .container {
+  width: 500px;
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
-  background: red;
+  background: white;
 }
 
 .list {
-  margin: 0 auto;
-  overflow: hidden;
-  background: blue;
+  padding-top: 20px;
 }
 
 .list-item {
+  margin: 0 30px;
+  padding: 20px 0;
+  border-bottom: solid #efefef 1px;
+}
+
+.list-item:last-child {
+  border-bottom:none;
+}
+
+.body-index {
+  text-align: canter;
+  background: #efefef;
 }
