@@ -7,11 +7,9 @@ body index
 <div class="body-index">
   <div class="container">
     <ul class="list">
-      <li class="list-item">Coffee</li>
-      <li class="list-item">Milk</li>
-      <li class="list-item">Milddk</li>
-      <li class="list-item">Milkss</li>
-      <li class="list-item">Masdfilk</li>
+      {{~it.listItems: listItem : index}}
+      <li class="list-item">{{=listItem.title}}</li>
+      {{~}}
     </ul>
   </div>
 </div>

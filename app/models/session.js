@@ -1,6 +1,6 @@
 //do authentication part
 function Session() {}
-
+//console.log("ok");
 Session.prototype.getToken = function() {
   request
     .post(this.origin + 'oauth2/token')

@@ -67,29 +67,52 @@ table {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_base\.scss}line{font-family:\000032}}
 html {
-  font-family: Helvetica,Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', arial, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
   font-weight: 100;
   color: #625f5d;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_base\.scss}line{font-family:\000038}}
 body {
-  background: #fbf8f5;
+  background: #efefef;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_base\.scss}line{font-family:\0000312}}
+h1 {
+  font-weight: 100;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\000032}}
 .landing-header {
   background: #6cf;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\000036}}
-.title {
-  font-size: 20px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\000038}}
+.landing-header-container {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
   text-align: center;
-  padding: 20px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000315}}
+.title {
+  color: white;
+  width: 300px;
+  font-size: 20px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000324}}
+.add-new {
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000328}}
 .footer {
   position: absolute;
   bottom: 0;
@@ -99,7 +122,7 @@ body {
   background: #6cf;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000336}}
 .container {
   width: 500px;
   margin: 0 auto;
@@ -108,25 +131,25 @@ body {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000344}}
 .list {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000349}}
 .list-item {
   margin: 0 30px;
   padding: 20px 0;
   border-bottom: solid #efefef 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000355}}
 .list-item:last-child {
   border-bottom: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000359}}
 .body-index {
   text-align: canter;
-  background: #efefef;
 }

@@ -1,10 +1,13 @@
 
 var listItems = [{
-  title : 'first todo'
+  title : 'coffee',
+  description : 'coffee is good'
 },{
-  title : 'second todo'
+  title : 'milk',
+  description : 'milk is, well, nah'
 },{
-  title : 'a;lsfjgla todo'
+  title : 'tea',
+  description : 'oh this is for papa'
 }];
 
 module.exports = listItems;

@@ -7,9 +7,11 @@ var request = require('superagent')
 
 
 function Todo() {
-  this.title;
-  this.description;
+  this.title = "1";
+  this.description = "2";
 }
+
+util.inherits(Todo, Model);
 
 Todo.prototype.get = function() {
   request
@@ -24,6 +26,7 @@ Todo.prototype.get = function() {
     //   console.log(data);
     .end(function(res) {
       console.log(res);
+      console.log("ok");
     });
 };
 
@@ -32,11 +35,5 @@ Todo.prototype.get = function() {
  */
 
 util.inherits(Todo, Model);
-util.inherits(Todo, Session);
 
-
-//GLOBAL.todo = new Todo();
-GLOBAL.todo = new Todo();
-console.log(todo);
-
-module.exports = todo;
+module.exports = new Todo();
