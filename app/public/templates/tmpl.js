@@ -3,7 +3,7 @@ function encodeHTMLSource() {  var encodeHTMLRules = { "&": "&#38;", "<": "&#60;
 String.prototype.encodeHTML=encodeHTMLSource();
 var tmpl = {};
   tmpl['bodyCreate']=function anonymous(it) {
-var out='<div class="body-index"><div class="container"><div class="wrapper-input-todo-title"><textarea class="input-todo-description" type="text" placeholder="Title here" name="title"></textarea></div><div class="wrapper-input-todo-description"><textarea class="input-todo-description" type="text" placeholder="Write some details about this!" name="description"></textarea></div><div class="create-button"><p class="create-button-text">SAVE</p></div></div></div>';return out;
+var out='<div class="body-index"><div class="container"><div class="wrapper-input-todo-title"><textarea class="input-todo-title" type="text" placeholder="Title here" name="title"></textarea></div><div class="wrapper-input-todo-description"><textarea class="input-todo-description" type="text" placeholder="Write some details about this!" name="description"></textarea></div><div class="create-button"><p class="create-button-text">SAVE</p></div></div></div>';return out;
 };
   tmpl['bodyIndex']=function anonymous(it) {
 var out='<div class="body-index"><div class="container"><ul class="list">';var arr1=it.listItems;if(arr1){var listItem,index=-1,l1=arr1.length-1;while(index<l1){listItem=arr1[index+=1];out+='<li class="list-item">'+(listItem.title)+'</li>';} } out+='</ul><a href="http://zhangjiayang.dev.p1staff.com:3200/create" class="create-button"><p class="create-button-text">CREATE</p></a></div></div>';return out;
