@@ -82,6 +82,17 @@ h1 {
   font-weight: 100;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_base\.scss}line{font-family:\0000316}}
+p {
+  text-align: left;
+  line-height: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_base\.scss}line{font-family:\0000321}}
+a {
+  text-decoration: none;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\000032}}
 .landing-header {
   background: #6cf;
@@ -152,4 +163,75 @@ h1 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000359}}
 .body-index {
   text-align: canter;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000363}}
+.todo-description {
+  margin: 50px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000367}}
+.delete-button {
+  border: solid #d44831 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 50px 0 30px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000375}}
+.delete-button-text {
+  color: #d44831;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000381}}
+.create-button {
+  border: solid #27cd00 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 50px 0 30px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000389}}
+.create-button-text {
+  color: #27cd00;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\0000395}}
+.wrapper-input-todo-description {
+  height: 200px;
+  margin: 50px 30px;
+  border: solid #efefef 1px;
+  border-radius: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\00003102}}
+.input-todo-description {
+  padding: 20px 20px 20px 20px;
+  width: 90%;
+  height: 80%;
+  border: none;
+  line-height: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\00003110}}
+.wrapper-input-todo-title {
+  height: 50px;
+  margin: 50px 30px;
+  border: solid #efefef 1px;
+  border-radius: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/todo-app\/app\/public\/styles\/_layout\.scss}line{font-family:\00003117}}
+.input-todo-title {
+  padding: 20px 20px 20px 20px;
+  width: 90%;
+  height: 10px;
+  border: none;
+  line-height: 20px;
 }

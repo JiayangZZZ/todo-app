@@ -11,5 +11,8 @@ body index
       <li class="list-item">{{=listItem.title}}</li>
       {{~}}
     </ul>
+    <a href="http://zhangjiayang.dev.p1staff.com:3200/create" class="create-button">
+      <p class="create-button-text">CREATE</p>
+    </a>
   </div>
 </div>

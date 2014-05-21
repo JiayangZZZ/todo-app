@@ -8,8 +8,5 @@ header
 <header class="landing-header">
   <section class="landing-header-container">
     <h1 class="title">YOUR TODOS</h1>
-    <div class="add-new">
-      <a href="http://www.baidu.com"><img src="/public/images/new-button.png" width="50px"></a>
-    </div>
   </section>
 </header>

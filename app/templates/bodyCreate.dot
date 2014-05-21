@@ -1,0 +1,21 @@
+<!--
+
+create body
+
+!-->
+
+<div class="body-index">
+  <div class="container">
+    <div class="wrapper-input-todo-title">
+      <textarea class="input-todo-description" type="text" placeholder="Title here" name="title">
+      </textarea>
+    </div>
+    <div class="wrapper-input-todo-description">
+      <textarea class="input-todo-description" type="text" placeholder="Write some details about this!" name="description">
+      </textarea>
+    </div>
+    <div class="create-button">
+      <p class="create-button-text">SAVE</p>
+    </div>
+  </div>
+</div>

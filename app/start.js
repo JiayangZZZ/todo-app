@@ -43,6 +43,13 @@ app.get('/todos/:id', function(req, res) {
   }));
 });
 
+app.get('/create', function(req, res) {
+  res.send(tmpl.html({
+    header : tmpl.header(),
+    body : tmpl.bodyCreate(),
+    footer : tmpl.footer()
+  }));
+});
 
 
 http.createServer(app).listen(app.get('port'), function() {

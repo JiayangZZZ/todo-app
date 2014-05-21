@@ -4,6 +4,14 @@ body todo
 
 !-->
 
-<section>
-   {{=it.todo}}
-</section>
+<div class="body-index">
+  <div class="container">
+    <div class="todo-description">
+      <p>{{=it.todo}}</p>
+    </div>
+    <a href="http://zhangjiayang.dev.p1staff.com:3200" class="delete-button">
+      <p class="delete-button-text">DELETE</p>
+    </a>
+  </div>
+</div>
+

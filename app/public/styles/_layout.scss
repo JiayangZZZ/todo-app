@@ -59,3 +59,68 @@
 .body-index {
   text-align: canter;
 }
+
+.todo-description {
+  margin: 50px 30px;
+}
+
+.delete-button {
+  border: solid #d44831 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 50px 0 30px 0;
+}
+
+.delete-button-text {
+  color: #d44831;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.create-button {
+  border: solid #27cd00 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 50px 0 30px 0;
+}
+
+.create-button-text {
+  color: #27cd00;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.wrapper-input-todo-description {
+  height: 200px;
+  margin: 50px 30px;
+  border: solid #efefef 1px;
+  border-radius: 5px;
+}
+
+.input-todo-description {
+  padding: 20px 20px 20px 20px;
+  width: 90%;
+  height: 80%;
+  border: none;
+  line-height: 20px;
+}
+
+.wrapper-input-todo-title {
+  height: 50px;
+  margin: 50px 30px;
+  border: solid #efefef 1px;
+  border-radius: 5px;
+}
+
+.input-todo-title {
+  padding: 20px 20px 20px 20px;
+  width: 90%;
+  height: 10px;
+  border: none;
+  line-height: 20px;
+}
+
+
+
