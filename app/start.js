@@ -22,8 +22,8 @@ var listItems = require('./models/listItems')
   , todos = require('./models/todos')
   , todo = require('./models/todo');
 
-GLOBAL.todo = todo;
-console.log(todo.origin);
+// GLOBAL.todo = todo;
+// console.log(todo.origin);
 
 app.get('/', function(req, res) {
   res.send(tmpl.html({
