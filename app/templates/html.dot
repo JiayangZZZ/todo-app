@@ -12,8 +12,8 @@ html
     <link href="/public/styles/build/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    {{=it.header}}
-    {{=it.body}}
-    {{=it.footer}}
+      {{=it.header}}
+      {{=it.body}}
+      {{=it.footer}}
   </body>
 </html>
