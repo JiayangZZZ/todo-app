@@ -22,6 +22,9 @@ var listItems = require('./models/listItems')
   , todos = require('./models/todos')
   , todo = require('./models/todo');
 
+console.log(todo.title);
+todo.get(12);
+
 // GLOBAL.todo = todo;
 // console.log(todo.origin);
 
