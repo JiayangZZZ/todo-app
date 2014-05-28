@@ -7,36 +7,31 @@ var request = require('superagent')
 
 
 function Todo() {
-  console.log("hsssi");
+  console.log("Todo constructor=======");
   this.title = "milk";
-  this.description = "Milk is a white liquid produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals before they are able to digest other types of food. Early-lactation milk contains colostrum, which carries the mother's antibodies to the baby and can reduce the risk of many diseases in the baby. It also contains many other nutrients.";
+  this.description = "ok, Milk is a white liquid produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals before they are able to digest other types of food. Early-lactation milk contains colostrum, which carries the mother's antibodies to the baby and can reduce the risk of many diseases in the baby. It also contains many other nutrients.";
 }
 
 util.inherits(Todo, Model);
 
 Todo.prototype.get = function() {
-  console.log("hi");
+  console.log("get prototype function======");
+  console.log(this.title + " hohoho");
   request
-    .get(this.origin + '/todos/:id' + this.accessToken)
+    .get(this.read().origin + '/todos/11' + '?userId=1&accessToken=' + this.read().accessToken)
     .send({
       username : 'jiayang',
       password : 'password',
-      clientId : this.clientId,
-      clientSecret : this.clientSecret
+      clientId : this.read().clientId,
+      clientSecret : this.read().clientSecret
     })
-    // .success(function(data) {
-    //   console.log(data);
     .end(function(data) {
-      console.log(data);
-      console.log("ok");
+      console.log(data.body[0]);
     });
-  console.log("nonono");
 };
 
 /**
  * Extend `Model`
  */
-
-util.inherits(Todo, Model);
 
 module.exports = new Todo();
