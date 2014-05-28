@@ -63,11 +63,17 @@
 
 .body-index {
   text-align: canter;
+  height: 100%;
   margin-bottom: 60px;
 }
 
 .todo-description {
   margin: 50px 30px;
+}
+
+.list-buttons {
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .delete-button {

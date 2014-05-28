@@ -14,8 +14,8 @@ create body
       <textarea class="input-todo-description" type="text" placeholder="Write some details about this!" name="description">
       </textarea>
     </div>
-    <div class="create-button">
+    <a href="http://zhangjiayang.dev.p1staff.com:3200/todos/:id" class="create-button">
       <p class="create-button-text">SAVE</p>
-    </div>
+    </a>
   </div>
 </div>

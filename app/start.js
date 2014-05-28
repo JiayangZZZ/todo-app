@@ -30,24 +30,24 @@ app.get('/', function(req, res) {
     header : tmpl.header(),
 //    container : tmpl.container(),
  //   list : tmpl.list({ todos : todos}),
-    body : tmpl.bodyIndex({ listItems: listItems}),
-    footer : tmpl.footer()
+    body : tmpl.bodyIndex({ listItems: listItems})
+    // footer : tmpl.footer()
   }));
 });
 
 app.get('/todos/:id', function(req, res) {
   res.send(tmpl.html({
     header : tmpl.header(),
-    body : tmpl.bodyTodo({todo : todo.description}),
-    footer : tmpl.footer()
+    body : tmpl.bodyTodo({todo : todo.description})
+    // footer : tmpl.footer()
   }));
 });
 
 app.get('/create', function(req, res) {
   res.send(tmpl.html({
     header : tmpl.header(),
-    body : tmpl.bodyCreate(),
-    footer : tmpl.footer()
+    body : tmpl.bodyCreate()
+    // footer : tmpl.footer()
   }));
 });
 
