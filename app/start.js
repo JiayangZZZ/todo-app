@@ -22,11 +22,12 @@ var listItems = require('./models/listItems')
   , todos = require('./models/todos')
   , todo = require('./models/todo');
 
-console.log(todo.title);
-todo.get(12);
 
-// GLOBAL.todo = todo;
-// console.log(todo.origin);
+console.log(todo.title);
+todo.get(11);
+
+
+
 
 app.get('/', function(req, res) {
   res.send(tmpl.html({
@@ -40,8 +41,8 @@ app.get('/', function(req, res) {
 
 app.get('/todos/:id', function(req, res) {
   res.send(tmpl.html({
-    header : tmpl.header(),
-    body : tmpl.bodyTodo({todo : todo.description})
+    header : tmpl.header({title : todo.title}),
+    body : tmpl.bodyTodo({description : todo.description})
     // footer : tmpl.footer()
   }));
 });
