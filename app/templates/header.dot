@@ -7,6 +7,6 @@ header
 
 <header class="landing-header">
   <section class="landing-header-container">
-    <h1 class="title">YOUR TODOS</h1>
+    <h1 class="title">{{=it.title}}</h1>
   </section>
 </header>
