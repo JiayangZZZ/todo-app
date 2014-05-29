@@ -23,12 +23,6 @@ var listItems = require('./models/listItems')
   , todo = require('./models/todo');
 
 
-console.log(todo.title);
-todo.get(11);
-
-
-
-
 app.get('/', function(req, res) {
   res.send(tmpl.html({
     header : tmpl.header(),
@@ -40,6 +34,10 @@ app.get('/', function(req, res) {
 });
 
 app.get('/todos/:id', function(req, res) {
+  todo.get(req.param('id'));
+  console.log(req.param('id'));
+  console.log(todo.title);
+
   res.send(tmpl.html({
     header : tmpl.header({title : todo.title}),
     body : tmpl.bodyTodo({description : todo.description})
