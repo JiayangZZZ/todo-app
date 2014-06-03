@@ -8,7 +8,7 @@ body index
   <div class="container">
     <ul class="list">
       {{~it.listItems: listItem : index}}
-      <li class="list-item">{{=listItem.title}}</li>
+      <a href="http://zhangjiayang.dev.p1staff.com:3200/todos/{{=listItem.id}}"><li class="list-item">{{=listItem.title}}</li></a>
       {{~}}
     </ul>
     <a href="http://zhangjiayang.dev.p1staff.com:3200/create" class="create-button">

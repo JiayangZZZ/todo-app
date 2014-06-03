@@ -30,6 +30,7 @@ var listItems = require('./models/listItems')
 app.get('/', function(req, res) {
   todos.get(function(err, list) {
     if(!err) {
+      console.log(list);
       res.send(tmpl.html({
         header : tmpl.header({title : 'YOUR TODOS'}),
         body : tmpl.bodyIndex({ listItems: list })

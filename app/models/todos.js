@@ -27,6 +27,7 @@ Todos.prototype.get = function(callback) {
       clientSecret : this.read().clientSecret
     })
     .end(function(error, data) {
+      console.log(data.body);
       callback(error, data.body);
     });
 };
