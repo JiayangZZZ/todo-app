@@ -11,8 +11,7 @@ function Todo() {
 
 util.inherits(Todo, Model);
 
-Todo.prototype.get = function(todoId) {
-  var self = this;
+Todo.prototype.get = function(todoId, callback) {
   request
     .get(this.read().origin + '/todos/' + todoId + '?userId=1&accessToken=' + this.read().accessToken)
     .send({
@@ -21,9 +20,8 @@ Todo.prototype.get = function(todoId) {
       clientId : this.read().clientId,
       clientSecret : this.read().clientSecret
     })
-    .end(function(data) {
-      self.title = data.body[0].title;
-      self.description = data.body[0].description;
+    .end(function(error, data) {
+      callback(error, data.body[0]);
     });
 };
 

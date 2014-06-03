@@ -17,7 +17,7 @@ function Todos() {
 
 util.inherits(Todos, Model);
 
-Todos.prototype.get = function() {
+Todos.prototype.get = function(callback) {
   request
     .get(this.read().origin + '/todos/?userId=1&accessToken=' + this.read().accessToken )
     .send({
@@ -26,13 +26,9 @@ Todos.prototype.get = function() {
       clientId : this.read().clientId,
       clientSecret : this.read().clientSecret
     })
-    .end(function(data) {
-      console.log(data.body);
+    .end(function(error, data) {
+      callback(error, data.body);
     });
 };
 
-// var todos = new Todos();
-// todos.get();
-
-
-// module.exports = todos;
+module.exports = new Todos();

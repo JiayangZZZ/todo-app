@@ -22,34 +22,39 @@ var listItems = require('./models/listItems')
   , todos = require('./models/todos')
   , todo = require('./models/todo');
 
+// var todos;
+// todos.get();
+// console.log(todos.list);
+// console.log(todos);
 
 app.get('/', function(req, res) {
-  res.send(tmpl.html({
-    header : tmpl.header(),
-//    container : tmpl.container(),
- //   list : tmpl.list({ todos : todos}),
-    body : tmpl.bodyIndex({ listItems: listItems})
-    // footer : tmpl.footer()
-  }));
+  todos.get(function(err, list) {
+    if(!err) {
+      res.send(tmpl.html({
+        header : tmpl.header({title : 'YOUR TODOS'}),
+        body : tmpl.bodyIndex({ listItems: list })
+      }));
+    }
+    else
+      console.log("error!");
+  });
 });
 
 app.get('/todos/:id', function(req, res) {
-  todo.get(req.param('id'));
-  console.log(req.param('id'));
-  console.log(todo.title);
-
-  res.send(tmpl.html({
-    header : tmpl.header({title : todo.title}),
-    body : tmpl.bodyTodo({description : todo.description})
-    // footer : tmpl.footer()
-  }));
+  todo.get(req.param('id'), function(err, todo) {
+    if(!err) {
+      res.send(tmpl.html({
+        header : tmpl.header({title : todo.title}),
+        body : tmpl.bodyTodo({description : todo.description})
+      }));
+    }
+  });
 });
 
 app.get('/create', function(req, res) {
   res.send(tmpl.html({
-    header : tmpl.header(),
+    header : tmpl.header({title : 'CREATE TODO'}),
     body : tmpl.bodyCreate()
-    // footer : tmpl.footer()
   }));
 });
 
