@@ -10,6 +10,7 @@ html
   <head>
     <title>TODO APP</title>
     <link href="/public/styles/build/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/vendor/jquery.js"></script>
   </head>
   <body>
       {{=it.header}}

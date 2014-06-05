@@ -27,7 +27,7 @@ var listItems = require('./models/listItems')
 app.get('/', function(req, res) {
   todos.get(function(err, list) {
     if(!err) {
-      console.log(list);
+      // console.log(list);
       res.send(tmpl.html({
         header : tmpl.header({title : 'YOUR TODOS'}),
         body : tmpl.bodyIndex({ listItems: list })
@@ -46,7 +46,11 @@ app.get('/todos/:id', function(req, res) {
     if(!err) {
       res.send(tmpl.html({
         header : tmpl.header({title : todo.title}),
-        body : tmpl.bodyTodo({description : todo.description})
+        body : tmpl.bodyTodo({
+          description : todo.description,
+          id : todo.id,
+          accessToken : 'd331dac991d3c59d17b8794040b910b80e3baaa4'
+        })
       }));
     }
   });
@@ -57,7 +61,8 @@ app.get('/create', function(req, res) {
     header : tmpl.header({title : 'CREATE TODO'}),
     body : tmpl.bodyCreate({accessToken : todo.read().accessToken})
   }));
-});
+  console.log(todo.read().accessToken);
+}); //res.redirect()
 
 app.post('/todos', function(req, res) {
   request
@@ -72,6 +77,18 @@ app.post('/todos', function(req, res) {
     header : tmpl.header({title : req.body.title}),
     body : tmpl.bodyTodo({description : req.body.description})
   }));
+})
+
+app.del('/todos', function(req, res) {
+  console.log(req.body.id);
+  console.log(req.body.accessToken);
+  request
+    .del('http://zhangjiayang.dev.p1staff.com:3000/todos/' + req.body.id)
+    .form({
+      userId : '1',
+      accessToken : req.body.accessToken
+    })
+  // res.redirect('/');
 })
 
 http.createServer(app).listen(app.get('port'), function() {
