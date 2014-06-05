@@ -88,7 +88,6 @@ app.del('/todos', function(req, res) {
       userId : '1',
       accessToken : req.body.accessToken
     })
-  // res.redirect('/');
 })
 
 http.createServer(app).listen(app.get('port'), function() {
